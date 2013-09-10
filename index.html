@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<title>Polar Bear Trophy Imports, 1997-2008</title>
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->	
+	<script src="lib/leaflet.js"></script>
+
+	<link rel="stylesheet" href="css/jquery-ui-1.10.2.custom.min.css" />
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery-ui-1.10.2.custom.min.js"></script>
+
+	<script src="src/trophysource.js"></script>
+	<link rel="stylesheet" href="css/trophysource.css" />
+</head>
+ 
+<body>
+	<div id="controls"><h1>Polar Bear Trophy Imports, 1997-2008</h1>
+	<h2>In 1994, amendments to the
+	U.S. <a target="_blank" href="http://www.nmfs.noaa.gov/pr/laws/mmpa/text.htm">Marine 
+	Mammal Protection Act</a> allowed American sport-hunters to import trophies of polar
+	bears they had killed in Canada.</h2>
+	
+	<h2>More than 900 import permits were issued between 1997 
+	and 2008, when the 
+	<a target="_blank" href="https://www.federalregister.gov/articles/2008/05/15/E8-11105/endangered-and-threatened-wildlife-and-plants-determination-of-threatened-status-for-the-polar-bear">designation</a>
+	of the polar 
+	bear as "threatened" under the U.S. 
+	<a target="_blank" href="http://www.fws.gov/endangered/laws-policies/index.html">Endangered 
+	Species Act</a> ended the program.</h2>
+
+	<h2>This map shows who applied for import permits and where their 
+	trophies came from. It is based on information publicly available in 
+	the U.S. <a target="_blank" href="http://www.federalregister.gov/"><em>Federal 
+	Register</em></a>.</h2>
+	
+	<h2><img src="images/usfws-polar-bear-female-with-young.jpg" 
+		alt="Polar bear female with young" width="280" height="198"/>
+	<br/><div class="caption">Polars bears in the Southern Beaufort Sea, 2006. 
+	Source: <a target="_blank" 
+	href="http://digitalmedia.fws.gov/cdm/singleitem/collection/natdiglib/id/1674/rec/3">USFWS</a>.</div>
+	</h2>
+	
+	<!-- Source data in 
+	<a target="_blank" 
+	href="http://en.wikipedia.org/wiki/JSON">JSON</a> format can be downloaded 
+	<a target="_blank" 
+	href="http://etiennebenson.com/trophysource/trophies.json">here</a>.   -->
+
+	<!--<h2>Canadian source populations are shown at the top of the map. Each circle 
+	in the U.S. portion of the map represents one permit application.</h2> -->
+	
+	<!-- <h1>Usage</h1> -->	
+	<h2><ul><li><b>Click a marker</b> (circle) to show application details.</li>
+	<li><b>Click an applicant 
+	name</b> to search official 
+	<em>Federal Register</em> for matching records.</li>
+	<li><b>Click 
+	a population outline</b> to highlight, hide, or show all 
+	markers for that population.</li></ul></h2>
+	
+
+
+	<div id="populations-frame">
+	<h2>Populations:</h2> 
+<!--	<div id="populations-indiv"></div> -->
+	<div id="populations-all">
+	<input type="button" id="show-all" name="show-all" value="Show All"/>
+	<input type="button" id="highlight-all" name="highlight-all" value="Highlight All"/>
+	<input type="button" id="hide-all" name="hide-all" value="Hide All"/>
+	</div>
+	</div>
+	
+	<div id="years-frame">
+	<h2>Years:<h2>
+	<div id="years"></div>
+	<div id="years-all"></div>
+	</div>
+	
+	</div>
+
+	<div id="map"></div>
+
+</body>

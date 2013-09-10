@@ -1,0 +1,96 @@
+h1 {
+	font-family:Arial, sans serif;
+	font-size:18px;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:normal;
+	font-family:Arial, sans serif;
+}
+
+a {
+	text-decoration:none;
+	color:"#005";
+}
+a:visited {
+	text-decoration:none;
+	color:"#005";
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#controls {
+	width:380px;
+	position:absolute;
+	left:0px;
+	right:0px:
+	padding:15px;
+	margin:15px;
+	}
+
+#map { 
+	height: 750px; 
+	width:  900px;
+	position:absolute;
+	top:0px;
+	left:410px;
+	padding:15px;
+	margin:15px;
+	}
+
+#years-frame {
+	display:inline-block;
+}
+
+#populations-frame { 
+}
+
+#years {
+	display:inline-block;
+}
+
+#years-all {
+	display:inline-block;
+	padding:5px 0 0 0;
+}
+
+#populations-all {
+	font-size:10px;
+	padding:5px 0 0 0;
+}
+
+
+#populations { 
+}
+
+ul {
+	margin-left:0px;
+	padding-left:20px;
+	list-style-type:square;
+}
+
+li {
+	font-size:14px;
+	font-weight:normal;
+	font-family:Arial, sans serif;
+}
+
+.poly-icon{
+	color:"#f00";
+	width:80px;
+} 
+
+.caption {
+	font-size:10px;
+	width:280px;
+	padding:0;
+	margin:0;
+}
+
+.ui-button {
+	font-size:12px;
+}
+
+
